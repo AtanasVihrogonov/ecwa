@@ -36,6 +36,7 @@ const SearchContainer = styled.div`
 
 const Input = styled.input`
   border: none;
+  outline: none;
 `
 
 const Center = styled.div`
@@ -44,6 +45,7 @@ const Center = styled.div`
 `
 
 const Logo = styled.h1`
+  font-size: 3rem;
   font-weight: bold;
   font-family: 'Nosifer', cursive;
 `
@@ -70,7 +72,7 @@ const Navbar = () => {
           <Language>EN</Language>
           <SearchContainer>
             <Input />
-            <Search style={{ color: 'gray', fontSize: '16px'}} />
+            <Search style={{ color: 'gray', fontSize: '16px' }} />
           </SearchContainer>
         </Left>
         <Center>
@@ -80,7 +82,7 @@ const Navbar = () => {
           <MenuItem>Register</MenuItem>
           <MenuItem>Sign in</MenuItem>
           <MenuItem>
-            <Badge badgeContent={4} color='primary'>
+            <Badge badgeContent={1} color='primary'>
               <ShoppingCartOutlinedIcon />
             </Badge>
           </MenuItem>
