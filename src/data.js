@@ -1,11 +1,11 @@
 export const sliderItems = [
   {
     id: 1,
-    img: 'https://images.unsplash.com/photo-1588192623572-8c669050e943?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODM1fHx3b29kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500',
+    img: 'images/slide-image-1.png',
     // img: 'https://i.ibb.co/XsdmR2c/1.png',
     title: 'SUMMER SALE',
     desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
-    bg: 'eefdf6',
+    bg: 'f0f3ef',
   },
   {
     id: 2,
@@ -28,18 +28,18 @@ export const sliderItems = [
 export const categories = [
   {
     id: 1,
-    img: 'https://images.pexels.com/photos/5886041/pexels-photo-5886041.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
-    title: 'SHIRT STYLE!',
+    img: 'images/cat-img-1.png',
+    title: 'WPC DECKING',
   },
   {
     id: 2,
-    img: 'https://images.pexels.com/photos/2983464/pexels-photo-2983464.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
-    title: 'LOUNGEWEAR LOVE',
+    img: 'images/cat-img-2.png',
+    title: 'DECKING WOOD',
   },
   {
     id: 3,
-    img: 'https://images.pexels.com/photos/5480696/pexels-photo-5480696.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
-    title: 'LIGHT JACKETS',
+    img: 'images/cat-img-3.png',
+    title: 'WPC FENCE PANELS',
   },
 ]
 
@@ -50,7 +50,7 @@ export const popularProducts = [
   },
   {
     id: 2,
-    img: 'https://cdn.shopify.com/s/files/1/0101/4832/products/Angela_Natural_Tee.png?v=1606780388',
+    img: 'https://images.ctfassets.net/5gvckmvm9289/3BlDoZxSSjqAvv1jBJP7TH/65f9a95484117730ace42abf64e89572/Noissue-x-Creatsy-Tote-Bag-Mockup-Bundle-_4_-2.png',
   },
   {
     id: 3,
@@ -70,7 +70,7 @@ export const popularProducts = [
   },
   {
     id: 7,
-    img: 'https://www.vintageindustries.nl/download_front/qympzk1762/2217_Arrow_Jacket_Forest.png',
+    img: 'https://d3o2e4jr3mxnm3.cloudfront.net/Mens-Jake-Guitar-Vintage-Crusher-Tee_68382_1_lg.png',
   },
   {
     id: 8,
