@@ -14,7 +14,7 @@ const CaregoryItem = ({ item }) => {
 
 const Container = styled.div`
   flex: 1;
-  margin: 3px;
+  margin: 5px;
   height: 70vh;
   position: relative;
 `

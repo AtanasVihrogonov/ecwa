@@ -1,5 +1,11 @@
 import styled from 'styled-components';
 
+const Announcement = () => {
+  return <Container>
+    Super Deal! Free Shipping on Orders Over £50
+  </Container>
+}
+
 const Container = styled.div`
   height: 30px;
   background-color: #4a5a45;
@@ -11,10 +17,5 @@ const Container = styled.div`
   font-weight: 500;
 `
 
-const Announcement = () => {
-  return <Container>
-    Super Deal! Free Shipping on Orders Over £50
-  </Container>
-}
 
 export default Announcement

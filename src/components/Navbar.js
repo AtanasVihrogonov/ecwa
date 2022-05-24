@@ -4,8 +4,37 @@ import Search from '@mui/icons-material/Search'
 import { Badge, IconButton } from '@mui/material'
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined'
 
+const Navbar = () => {
+  return (
+    <Container>
+      <Wrapper>
+        <Left>
+          <Language>EN</Language>
+          <SearchContainer>
+            <Input />
+            <Search style={{ color: 'gray', fontSize: '16px' }} />
+          </SearchContainer>
+        </Left>
+        <Center>
+          <Logo>AV.</Logo>
+        </Center>
+        <Right>
+          <MenuItem>Register</MenuItem>
+          <MenuItem>Sign in</MenuItem>
+          <MenuItem>
+            <Badge badgeContent={1} color='primary'>
+              <ShoppingCartOutlinedIcon />
+            </Badge>
+          </MenuItem>
+        </Right>
+      </Wrapper>
+    </Container>
+  )
+}
+
 const Container = styled.div`
   height: 60px;
+  margin-bottom: 1.6rem;
 `
 
 const Wrapper = styled.div`
@@ -45,7 +74,7 @@ const Center = styled.div`
 `
 
 const Logo = styled.h1`
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: bold;
   font-family: 'Nosifer', cursive;
 `
@@ -63,33 +92,5 @@ const MenuItem = styled.div`
   margin-left: 25px;
   cursor: pointer;
 `
-
-const Navbar = () => {
-  return (
-    <Container>
-      <Wrapper>
-        <Left>
-          <Language>EN</Language>
-          <SearchContainer>
-            <Input />
-            <Search style={{ color: 'gray', fontSize: '16px' }} />
-          </SearchContainer>
-        </Left>
-        <Center>
-          <Logo>AV.</Logo>
-        </Center>
-        <Right>
-          <MenuItem>Register</MenuItem>
-          <MenuItem>Sign in</MenuItem>
-          <MenuItem>
-            <Badge badgeContent={1} color='primary'>
-              <ShoppingCartOutlinedIcon />
-            </Badge>
-          </MenuItem>
-        </Right>
-      </Wrapper>
-    </Container>
-  )
-}
 
 export default Navbar
