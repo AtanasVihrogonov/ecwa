@@ -51,6 +51,7 @@ const Container = styled.div`
   height: 350px;
   background-color: #f0f3ef;
   position: relative;
+  border-radius: 5px;
 
   &:hover ${Info} {
     opacity: 1;

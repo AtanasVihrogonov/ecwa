@@ -85,6 +85,7 @@ const Right = styled.div`
   text-align: center;
   text-transform: uppercase;
   justify-content: flex-end;
+  margin-right: 10px;
 `
 
 const MenuItem = styled.div`

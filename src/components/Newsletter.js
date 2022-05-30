@@ -39,22 +39,26 @@ const InputContainer = styled.div`
   background-color: #fff;
   display: flex;
   justify-content: space-between;
-  border: 1px solid #444;
+  border: 2px solid #4a5a45;
+  border-radius: 50vw;
 `
 const Input = styled.input`
   border: none;
   outline: none;
   flex: 8;
   padding-left: 1.1rem;
-  
+  border-radius: 50vw;
+  letter-spacing: 1px;
 `
 const Button = styled.button`
   flex: 1;
   border: none;
   background-color: #4a5a45;
   color: #fff;
+  border-radius: 50vw;
+  &:hover {
+    background-color: #62775b;
+  }
 `
-
-
 
 export default Newsletter

@@ -37,7 +37,7 @@ const Footer = () => {
       </Left>
 
       <Center>
-        <Title>Usefull Links</Title>
+        <Title>Useful Links</Title>
         <List>
           <ListItem>Home</ListItem>
           <ListItem>Cart</ListItem>
