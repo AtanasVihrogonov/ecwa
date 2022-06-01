@@ -1,13 +1,7 @@
 import styled from 'styled-components'
 import { popularProducts } from '../data'
 import Product from './Product'
-
-const Container = styled.div`
-  display: flex;
-  padding: 1.1rem;
-  flex-wrap: wrap;
-  justify-content: space-between;
-`
+import { laptopXL } from '../responsive'
 
 const Products = () => {
   return (
@@ -18,5 +12,13 @@ const Products = () => {
     </Container>
   )
 }
+
+const Container = styled.div`
+  display: flex;
+  padding: 1.1rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  ${laptopXL({ width: '100%', margin: '0 auto', maxWidth: '1770px', padding: '0 0 1.1rem 0' })}
+`
 
 export default Products

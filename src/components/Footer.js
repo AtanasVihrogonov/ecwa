@@ -8,6 +8,7 @@ import {
   YouTube,
 } from '@mui/icons-material'
 import styled from 'styled-components'
+import { mobile, tablet, laptopXL } from '../responsive'
 
 const Footer = () => {
   return (
@@ -77,6 +78,17 @@ const Container = styled.div`
   align-items: center;
   justify-content: space-between;
   padding: 1.5rem;
+  background-color: #333;
+  color: #fff;
+  border-top: 1.4rem solid #f0f3ef;
+  ${mobile({ flexDirection: 'column' })}
+  ${tablet({ flexDirection: 'column' })}
+    ${laptopXL({
+    width: '100%',
+    margin: '0 auto',
+    maxWidth: '1770px',
+    padding: '1.1rem',
+  })}
 `
 const Left = styled.div`
   flex: 1;
@@ -115,6 +127,7 @@ const SocialIcon = styled.div`
 const Center = styled.div`
   flex: 1;
   padding: 1.1rem;
+  ${mobile({ display: 'none' })}
 `
 
 const Title = styled.h3`
@@ -138,6 +151,7 @@ const ListItem = styled.li`
 const Right = styled.div`
   flex: 1;
   padding: 1.1rem 1.1rem 1.1rem 0;
+  ${tablet({ padding: '1.1rem', width: '100%' })}
 `
 
 const ContactItem = styled.div`
@@ -147,7 +161,8 @@ const ContactItem = styled.div`
 `
 
 const Payment = styled.img`
-  width: 50%;
+  width: 60%;
+  ${tablet({ width: '30%' })}
 `
 
 export default Footer

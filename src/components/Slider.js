@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import ArrowLeftOutlinedIcon from '@mui/icons-material/ArrowLeftOutlined'
 import ArrowRightOutlinedIcon from '@mui/icons-material/ArrowRightOutlined'
 import { sliderItems } from '../data'
+import { mobile, tablet, laptop, laptopXL } from '../responsive'
 
 const Slider = () => {
   const [slideIndex, setSlideIndex] = useState(0)
@@ -43,9 +44,14 @@ const Slider = () => {
 const Container = styled.div`
   width: 100%;
   height: 100vh;
+  margin: 0 auto;
+  background-color: pink;
   display: flex;
   position: relative;
   overflow: hidden;
+  margin-top: 1.8rem;
+  ${mobile({ display: 'none' })}
+  ${tablet({ display: 'none' })}
 `
 const Arrow = styled.div`
   width: 50px;
@@ -80,13 +86,17 @@ const Slide = styled.div`
   background-color: #${(props) => props.bg};
 `
 const ImgContainer = styled.div`
+  display: flex;
+  justify-content: center;
   height: 100%;
   flex: 1;
   padding-top: 6rem;
   padding-left: 6rem;
+  ${laptop({ paddingTop: '5rem', paddingLeft: '5rem' })}
 `
 const Image = styled.img`
   height: 80%;
+  ${laptop({ height: '75%' })}
 `
 const InfoContainer = styled.div`
   flex: 1;
@@ -95,13 +105,16 @@ const InfoContainer = styled.div`
 const Title = styled.h1`
   text-transform: uppercase;
   font-size: 4rem;
+  ${laptop({ fontSize: '3.5rem' })}
 `
 const Desc = styled.p`
+  padding: 10px;
   text-transform: uppercase;
   margin: 3.7rem 0;
   font-size: 1.2rem;
   font-weight: 500;
   letter-spacing: 3px;
+  ${laptop({ fontSize: '1.1rem' })}
 `
 const Button = styled.button`
   text-transform: uppercase;

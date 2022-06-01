@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import Search from '@mui/icons-material/Search'
 import { Badge, IconButton } from '@mui/material'
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined'
+import { mobile,laptopXL } from '../responsive'
 
 const Navbar = () => {
   return (
@@ -11,7 +12,7 @@ const Navbar = () => {
         <Left>
           <Language>EN</Language>
           <SearchContainer>
-            <Input />
+            <Input placeholder='Search' />
             <Search style={{ color: 'gray', fontSize: '16px' }} />
           </SearchContainer>
         </Left>
@@ -34,7 +35,8 @@ const Navbar = () => {
 
 const Container = styled.div`
   height: 60px;
-  margin-bottom: 1.6rem;
+  ${mobile({ height: '50px' })}
+  ${laptopXL({ width: '100%', margin: '0 auto',maxWidth: '1770px' })}
 `
 
 const Wrapper = styled.div`
@@ -42,6 +44,7 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  ${mobile({ padding: '10px 0'})}
 `
 
 const Left = styled.div`
@@ -53,6 +56,7 @@ const Left = styled.div`
 const Language = styled.span`
   font-size: 14px;
   cursor: pointer;
+  ${mobile({ display: 'none' })}
 `
 
 const SearchContainer = styled.div`
@@ -61,11 +65,13 @@ const SearchContainer = styled.div`
   align-items: center;
   margin-left: 25px;
   padding: 5px;
+  ${mobile({ marginLeft: '10px' })}
 `
 
 const Input = styled.input`
   border: none;
   outline: none;
+  ${mobile({ width: '50px' })}
 `
 
 const Center = styled.div`
@@ -77,6 +83,7 @@ const Logo = styled.h1`
   font-size: 2.5rem;
   font-weight: bold;
   font-family: 'Nosifer', cursive;
+  ${mobile({ fontSize: '24px' })}
 `
 
 const Right = styled.div`
@@ -86,12 +93,14 @@ const Right = styled.div`
   text-transform: uppercase;
   justify-content: flex-end;
   margin-right: 10px;
+  ${mobile({ flex: 2,justifyContent: 'center' })}
 `
 
 const MenuItem = styled.div`
   font-size: 14px;
   margin-left: 25px;
   cursor: pointer;
+  ${mobile({ fontSize: '12px', marginLeft: '10px' })}
 `
 
 export default Navbar

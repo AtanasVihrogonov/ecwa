@@ -4,6 +4,7 @@ import {
   SearchOutlined,
   ShoppingCartOutlined,
 } from '@mui/icons-material'
+import { laptopXL } from '../responsive'
 
 const Product = ({ item }) => {
   return (
@@ -39,6 +40,7 @@ const Info = styled.div`
   justify-content: center;
   transition: all 0.5s ease;
   cursor: pointer;
+  ${laptopXL({ width: '100%', margin: '0 auto', maxWidth: '1770px' })}
 `
 
 const Container = styled.div`
@@ -51,7 +53,6 @@ const Container = styled.div`
   height: 350px;
   background-color: #f0f3ef;
   position: relative;
-  border-radius: 5px;
 
   &:hover ${Info} {
     opacity: 1;
